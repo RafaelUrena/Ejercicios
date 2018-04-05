@@ -79,7 +79,7 @@ public class Humano extends Personaje{
     
     @Override
     public void mostrarEstado() {
-        String respuesta="";
+        String respuesta;
         
         if(isTieneCaballo()) respuesta = "Si";
         else respuesta = "No";
