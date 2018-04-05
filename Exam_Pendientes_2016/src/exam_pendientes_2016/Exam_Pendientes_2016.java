@@ -5,7 +5,7 @@
  */
 package exam_pendientes_2016;
 
-import Mapa.Item;
+import Mapa.*;
 import Personajes.*;
 
 /**
@@ -20,10 +20,18 @@ public class Exam_Pendientes_2016 {
     public static void main(String[] args) {
         Humano h = new Humano();
         Item c = new Item();
+        Equipo e1 = new Equipo("DAW");
+        Equipo e2 = new Equipo("DAM");
             
         h.mostrarEstado();
         
         System.out.println(c);
+        
+        e1.generarPersonaje();
+        e2.generarPersonaje();
+        
+        e1.mostrarPersonajes();
+        e2.mostrarPersonajes();
     }
     
 }
