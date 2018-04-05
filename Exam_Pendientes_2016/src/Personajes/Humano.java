@@ -17,7 +17,7 @@ public class Humano extends Personaje{
         super(60,1);
         this.nombre = nombreHumano();
         this.escudo = 100;
-        this.tieneCaballo = false;
+        this.tieneCaballo = ;
     }
 
     public Humano(int escudo, boolean tieneCaballo) {
