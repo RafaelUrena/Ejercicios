@@ -5,6 +5,8 @@
  */
 package Mapa;
 
+import Personajes.*;
+
 /**
  *
  * @author the_d
@@ -33,8 +35,32 @@ public class Equipo {
 
     public void generarPersonaje(){
         
+        for (int i = 0; i < this.personaje.length; i++) {
+            
+            switch ((int)(Math.random()*3)) {
+            case 0:
+                this.personaje[i] = new Humano();
+                break;
+            case 1:
+                this.personaje[i] = new Elfo();
+                break;
+            case 2:
+                this.personaje[i] = new Trasgo();
+                break;
+            }
+        }
         
     }
     
+    public void mostrarPersonajes(){
+        
+        System.out.println("Team name: " + nombre);
+        
+        for (int i = 0; i < this.personaje.length; i++) {
+            
+            System.out.println("Personajes: " + personaje[i]);
+        }
+        
+    }
     
 }
