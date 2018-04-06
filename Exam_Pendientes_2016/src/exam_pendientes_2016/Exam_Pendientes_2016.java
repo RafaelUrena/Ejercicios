@@ -22,6 +22,8 @@ public class Exam_Pendientes_2016 {
         Item c = new Item();
         Equipo e1 = new Equipo("DAW");
         Equipo e2 = new Equipo("DAM");
+        Escenario mapa = new Escenario();
+        
             
         h.mostrarEstado();
         
@@ -32,6 +34,10 @@ public class Exam_Pendientes_2016 {
         
         e1.mostrarPersonajes();
         e2.mostrarPersonajes();
+        
+        mapa.generarEscenario();
+        
+        mapa.mostrarEscenario();
     }
     
 }

@@ -13,11 +13,11 @@ import Personajes.*;
  */
 public class Equipo {
     private String nombre;
-    private Object personaje[];
+    private Personaje personaje[];
 
     public Equipo(String nombre) {
         this.nombre = nombre;
-        this.personaje = new Object [2];
+        this.personaje = new Personaje [2];
     }
 
     public String getNombre() {
